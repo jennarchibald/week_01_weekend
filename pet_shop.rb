@@ -73,7 +73,7 @@ end
 
 
 def customer_can_afford_pet(customer, pet)
-  customer[:cash] > pet[:price] ? true : false
+  customer[:cash] > pet[:price]
 end
 
 
@@ -84,4 +84,4 @@ def sell_pet_to_customer(petshop, pet, customer)
     petshop[:admin][:total_cash] += pet[:price]
     customer[:cash] -= pet[:price]
   end
-  end
+end
